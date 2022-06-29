@@ -1,0 +1,3778 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+   
+    <!-- CSS -->
+    <link href="https://www.bonus.in/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://www.bonus.in/assets/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="https://www.bonus.in/assets/css/bootstrap-reboot.min.css" rel="stylesheet" />
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css" rel="stylesheet">
+
+    <!--   <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" /> -->
+
+    <link href="https://cdn.jsdelivr.net/gh/djibe/bootstrap-material-datetimepicker@6659d24c7d2a9c782dc2058dcf4267603934c863/css/bootstrap-material-datetimepicker-bs4.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.bonus.in/assets/fonts/font-style.css" />
+    <!--  <link rel="stylesheet" href="https://www.bonus.in/assets/parallax/demo.min.css"/> -->
+
+
+    <!-- Js -->
+    <script src="https://www.bonus.in/assets/js/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/moment/moment@develop/min/moment-with-locales.min.js" type="text/javascript"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/djibe/bootstrap-material-datetimepicker@83a10c38ee94dd27fd946ea137af6667c65a738f/js/bootstrap-material-datetimepicker-bs4.min.js" type="text/javascript"></script>
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script> -->
+    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js" type="text/javascript"></script> -->
+    <!---->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+-->
+
+
+    <!-- Mahesh CODE --->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <!-- Mahesh CODE --->
+
+
+    <script src="https://www.bonus.in/assets/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+
+
+    <!-- Mahesh CODE --->
+    <!-- Bootstrap Select Css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+    <!--<script src="https://www.bonus.in/assets/plugins/jquery-validation/jquery.validate.js"></script>-->
+    <!-- Sweetalert Css -->
+    <link href="https://www.bonus.in/assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+    <!-- Sweet Alert Plugin Js -->
+    <script src="https://www.bonus.in/assets/plugins/sweetalert/sweetalert.min.js"></script>
+    
+    <!-- Jquery Validation Plugin Css -->
+    <script src="https://www.bonus.in/assets/plugins/jquery-validation/jquery.validate.js"></script>
+    <!-- <script src="https://www.bonus.in/assets/js/pages/ui/notifications.js"></script> -->
+
+
+    <link href="https://www.bonus.in/assets/dist/aos.css" rel="stylesheet">
+
+    <script src="https://www.bonus.in/assets/dist/aos.js"></script>
+
+    <!--  <script src="https://www.bonus.in/assets/parallax/universal-parallax.min.js"></script>
+  <script src="https://www.bonus.in/assets/parallax/js/demo.min.js"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B626H9TMY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0B626H9TMY');
+    </script>
+    <style type="text/css">
+        html {
+            font-family: 'DIN Regular' !important;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            /* remove scrollbar space */
+            /* background: transparent !important; */
+            /* optional: just make scrollbar invisible */
+        }
+
+        /* ::-webkit-scrollbar {
+    display:none;
+  }*/
+
+        /* optional: show position indicator in red */
+
+        ::-webkit-scrollbar-thumb {
+            background: #dbdbdb !important;
+        }
+
+        body {
+            font-family: 'DIN Regular' !important;
+        }
+
+        .theme-color {
+            color: #f2663f;
+        }
+
+       
+
+        .customLoader-text {
+            left: 47.2%;
+            top: 61%;
+            position: absolute;
+            color: #d4d1d1;
+        }
+
+        .dtp {
+            z-index: 40000 !important;
+        }
+
+        .navbar-inverse .navbar-toggler-icon {
+            padding: 90px !important;
+        }
+
+        .header-logo {
+            height: 70px;
+            width: 100%;
+            max-width: 400px;
+            /*height: 70px;*/
+            /*  width: 75px;*/
+            margin-left: 15px;
+            object-fit: contain;
+            /*background-color: #fff;*/
+            /* padding-top: 28px;*/
+        }
+
+        .material-icons {
+            vertical-align: middle !important;
+            padding-bottom: 3px !important;
+        }
+
+        .letter-sp-1 {
+            letter-spacing: 1px;
+        }
+
+        .font-wt-500 {
+            font-weight: 500;
+        }
+
+        .header-txt-sm {
+            font-size: 13px;
+            font-weight: 500 !important;
+            letter-spacing: 1px;
+            margin: 0px 8px 0px 8px;
+        }
+
+        /*.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}*/
+
+        .overlay {
+            position: fixed;
+            /*   display: none;*/
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 35px;
+            color: white;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .text-label {
+            margin-top: 20%;
+            margin-left: 7%;
+            position: absolute;
+        }
+
+        
+
+        .navbar-side {
+            height: 100%;
+            width: 25%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 0;
+            list-style: none;
+            border-left: 1px solid #707072;
+            background-color: rgba(0, 0, 0, .9);
+            overflow-y: scroll;
+            z-index: 1000;
+        }
+
+        .navbar-side-item {
+            padding: 1.5rem 0;
+            margin: 0;
+            /* border-bottom: 1px solid #ccc;*/
+            height: 5rem;
+        }
+
+        /*.side-link-login, .side-link-register,*/
+
+        .side-link-search {
+            display: none !important;
+        }
+
+        .side-link {
+            padding-left: 2rem;
+            color: #fff;
+            background: transparent;
+            color: #fff !important;
+            text-decoration: none !important;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .submenu-side-bar {
+            padding: 0.75rem 2.25rem !important;
+            font-size: 13px;
+        }
+
+        .navbar-side {
+            // other code omitted
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
+            -webkit-transition: 300ms ease;
+            transition: 300ms ease;
+        }
+
+        .reveal {
+            -webkit-transform: translateX(0%);
+            -ms-transform: translateX(0%);
+            transform: translateX(0%);
+            -webkit-transition: 300ms ease;
+            transition: 300ms ease;
+        }
+
+        .menubarrow {
+            padding-top: 22.5px;
+        }
+
+        .menubarrow .header-txt-sm {
+            letter-spacing: 0px !important;
+            font-size: 15px;
+        }
+
+        .list-group-item {
+            /* padding: 0.75rem 1.25rem;  */
+            padding: 0.45rem 2.0rem;
+            background-color: transparent;
+            /* border: 1px solid rgb(112, 112, 114);*/
+            color: #fff !important;
+            text-decoration: none !important;
+            height: 40px;
+        }
+
+        .products-sidebar {
+            display: none;
+        }
+
+        .rowCustom {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border-spacing: 10px;
+            margin: auto;
+        }
+
+        .columnCustom {
+            display: table-cell;
+            background-color: rgba(240, 240, 240, .6);
+            /*#f0f0f0*/
+            border: 1px solid #dbdbdb;
+        }
+
+        .rowCustomProd {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            /* border-spacing: 10px;*/
+            margin: auto;
+            display: none;
+        }
+
+        .columnCustomProd {
+            display: table-cell;
+            background-color: #cdd4d7;
+        }
+
+        .brandsDiv {
+            /*padding-right: 0px;*/
+        }
+
+        .ulCompany {
+            list-style-type: none;
+        }
+
+        .instaFeeds {
+            height: 430px;
+            max-height: 450px;
+            overflow-y: scroll;
+            width: 100%;
+            position: absolute;
+        }
+
+        .iframeVideo {
+            height: 430px;
+            max-height: 450px;
+            overflow-y: scroll;
+            width: 100%;
+            position: absolute;
+        }
+
+        .fb-comments,
+        .fb-comments span,
+        .fb-comments.fb_iframe_widget span iframe {
+            width: 100% !important;
+        }
+
+        .mainMenu {
+            /* border-bottom: 1px solid #707072;*/
+        }
+
+        .mainMenu a[aria-expanded="true"] {
+            background-color: #ea5024;
+            color: #fff !important;
+            border-radius: 0;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            top: 20% !important;
+            /*display: none;*/
+        }
+
+        .carousel .carousel-item .carousel-inner {
+            height: 850px !important;
+        }
+
+        .carousel .carousel-control {
+            visibility: hidden !important;
+        }
+
+        .carousel:hover .carousel-control {
+            visibility: visible !important;
+        }
+
+        /* .parallax{
+      -moz-background-size: auto;
+    -webkit-background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: auto;
+    height: auto !important;
+  }*/
+
+        .parallax {
+            background-image: url("https://www.bonus.in/assets/images/slide-5.jpg");
+            /* min-height: 300px; */
+            height: 45vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar-toggler-right {
+            margin-left: -85% !important;
+        }
+
+        .footerLinkDiv {
+            font-size: 12px !important;
+        }
+
+        .rowCustomBrand {
+            background-color: #cacaca;
+            padding: 10px 20px 10px 20px;
+            width: 100%;
+            margin: 0;
+        }
+
+        .rowCustomProduct {
+            background-color: #fff;
+            padding: 10px 20px 10px 20px !important;
+            width: 100%;
+            margin: 0;
+        }
+
+        .rowCustomMakeInInd {
+            background-color: #fff;
+            padding: 0 !important;
+            width: 100%;
+            margin: 0;
+        }
+
+        .homepageImage {
+            /* min-height: 400px;*/
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .madeInIndiaImageMob {
+            display: none;
+        }
+
+        .madeInIndiaSpan {
+            color: #000;
+            position: absolute;
+            margin-left: 80px;
+            margin-top: 5%;
+            left: 0;
+        }
+
+        .madeInIndiaText1 {
+            font-size: 35px;
+            line-height: 1;
+            font-weight: 600;
+            color: #ffe0b1;
+        }
+
+        .madeInIndiaText3 {
+            margin-top: 50px;
+            line-height: 1;
+            font-size: 21px;
+            letter-spacing: initial;
+            max-width: 50%;
+            color: #fff;
+        }
+
+        .madeInIndiaText2 {
+            font-size: 55px;
+            line-height: 1;
+            font-weight: 600;
+            color: #ffe0b1;
+        }
+
+        .useGoodHandleText2 {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .useGoodHandleText1 {
+            font-weight: 600;
+            line-height: 1;
+            font-size: 35px;
+        }
+
+        .featuredProductBtn {
+            font-size: 15px;
+            background-color: #f2663f;
+            max-width: 150px;
+            text-align: center;
+            padding: 5px;
+            margin-top: 30px;
+            color: #fff;
+        }
+
+        .featuredProductBtn1 {
+            margin-top: 10px;
+        }
+
+        .featuredProductBtn2 {
+            margin-top: 35px;
+        }
+
+        .featuredProductBtn3 {
+            margin-top: 135px;
+            padding: 8px;
+        }
+
+        .overlay-1 {
+            padding-top: 56%;
+            padding-left: 15px;
+            background-color: transparent;
+        }
+
+        .overlay-2 {
+            padding-top: 26%;
+            padding-left: 50%;
+            background-color: transparent;
+            color: #8e727a;
+        }
+
+        .overlay-3 {
+            padding-top: 30%;
+            padding-left: 28%;
+            background-color: transparent;
+            color: #33485d;
+            font-size: 15px;
+            line-height: 1;
+        }
+
+        .featuredProductText {
+            font-size: 25px;
+        }
+
+        #navbarSideButton {
+            background-color: transparent !important;
+            border: 0 !important;
+            text-decoration: none;
+        }
+
+        .homeBranLogos {
+            width: 100%;
+            object-fit: cover;
+            height: 367px;
+            background-color: #f2f2f2;
+        }
+
+        #demo {
+            margin-top: -5.5% !important;
+        }
+
+        .mainJobsContainer {
+            display: block;
+        }
+
+        .mobJobsContainer {
+            display: none;
+            margin-bottom: -30px;
+        }
+
+        #navbarSideButton1 {
+            float: left;
+        }
+
+        @media screen and (max-width: 1950px) {
+            #demo {
+                margin-top: -6% !important;
+            }
+        }
+
+        @media screen and (max-width: 1800px) {
+            #demo {
+                margin-top: -6.5% !important;
+            }
+        }
+
+        @media screen and (max-width: 1500px) {
+            #demo {
+                margin-top: -10% !important;
+            }
+        }
+
+        @media screen and (max-width: 1486px) {
+            .navbar-toggler-right {
+                margin-left: -70% !important;
+            }
+            .overlay-1 {
+                padding-top: 50%;
+            }
+            .overlay-2 {
+                padding-top: 24%;
+            }
+            .overlay-3 {
+                padding-top: 27%;
+            }
+            /*.header-txt-sm { font-size: 13px !important;}     */
+        }
+
+        @media screen and (max-width: 1414px) {
+            .navbar-toggler-right {
+                margin-left: -54% !important;
+            }
+        }
+
+        @media screen and (max-width: 1390px) {
+            .navbar-toggler-right {
+                margin-left: -43% !important;
+            }
+        }
+
+        @media screen and (max-width: 1268px) {
+            /* .header-txt-sm{font-size: 12px !important;}*/
+        }
+
+        @media screen and (max-width: 1260px) {
+            .menubar-products {
+                font-size: 14px !important;
+            }
+            .menubarrow .header-txt-sm {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            /* .social-btn{
+    max-width: 60% !important;
+  }*/
+            .padlockdiv {
+                margin-top: 62% !important;
+            }
+            /*.menubar-products{font-size: 14px !important;}*/
+        }
+
+        @media screen and (max-width: 1195px) {
+            .menubarrow .header-txt-sm {
+                font-size: 13px;
+            }
+            .madeInIndiaText3 {
+                font-size: 18px !important;
+            }
+            .item {
+                width: 31% !important;
+            }
+            .homeBranLogos {
+                height: 345px;
+            }
+        }
+
+        @media screen and (max-width: 1152px) {
+            .header-txt-sm {
+                margin: 0px 5px 0px 5px !important;
+            }
+            .homeBranLogos {
+                height: 300px;
+            }
+        }
+
+        @media screen and (max-width: 1106px) {
+            .header-txt-sm {
+                font-size: 12px !important;
+            }
+        }
+
+        @media screen and (max-width: 1048px) {
+            .header-txt-sm {
+                font-size: 11.5px !important;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        @media screen and (max-width: 1085px) {
+            .navbar-toggler-right {
+                margin-left: -20% !important;
+            }
+            /* .header-txt-sm{font-size: 10px !important;}*/
+            /*.social-btn{
+    max-width: 65% !important;
+  }*/
+            /*.menubar-products{font-size: 12px !important;}*/
+        }
+
+        @media screen and (max-width: 1061px) {
+            .menubar-products {
+                font-size: 13px !important;
+            }
+            /*  .menubar-products{  font-size: 11px !important;
+    padding-top: 3px;}*/
+            .text-label {
+                font-size: 25px;
+            }
+            /* .menubar-products{font-size: 12px !important;}*/
+            /* .header-txt-sm {  
+      font-size: 66% !important;
+    } */
+        }
+
+        @media screen and (max-width: 1050px) {
+            /*  .header-txt-sm{font-size: 10px !important;}*/
+            .menubar-products {
+                font-size: 11px !important;
+            }
+            /*  .menubar-products{  font-size: 11px !important;
+    padding-top: 3px;}*/
+            /*   .text-label{    font-size: 25px;}*/
+            /* .menubar-products{font-size: 12px !important;}*/
+            /*.header-txt-sm {  
+      font-size: 66% !important;
+    }  */
+        }
+
+        @media screen and (max-width: 1033px) {
+            /*.menubar-products{font-size: 10.5px !important;}*/
+        }
+
+        @media screen and (max-width: 1025px) {
+            /* .menubar-products{font-size: 10.5px !important;}*/
+            /* .about{top: 56% !important;}*/
+            .navbar-side {
+                width: 25%;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .navbar-toggler-right {
+                margin-left: 15px !important;
+            }
+            /*.social-btn{
+    max-width: 73% !important;
+  }*/
+            .padlockdiv {
+                margin-top: 67% !important;
+            }
+            /* .menubar-products{font-size: 12px;}*/
+            .navbar-side {
+                width: 30%;
+            }
+            .side-link-login,
+            .side-link-register,
+            .side-link-search {
+                display: block !important;
+            }
+            .loginRegister {
+                display: none;
+            }
+            .header-logo {
+                height: 60px;
+                margin-left: 0px;
+            }
+            .homeBranLogos {
+                height: 250px;
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+            /*.social-btn{
+    max-width: 80% !important;
+  }*/
+            .padlockdiv {
+                margin-top: 72% !important;
+            }
+            .menubar-products {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 774px) {
+            /*.social-btn{  max-width: 90% !important; }*/
+            /*	.about-text{max-width:75% !important;}*/
+            /*	.about{display: none;}*/
+            .banner h2 {
+                font-size: 30px !important;
+            }
+            /* .menubar-products{font-size: 8.3px!important;}*/
+            .menubarrow {
+                padding-top: 22.5px;
+            }
+            .navbar-side {
+                width: 35%;
+            }
+            .padlockdiv {
+                margin-top: 77% !important;
+            }
+            .products-sidebar {
+                display: block;
+            }
+            /* #navbarSideButton{margin-top: -9% !important; margin-left:100%  !important; position: absolute;}*/
+            #navbarSideButton {
+                margin-top: -15% !important;
+                margin-left: 36% !important;
+                position: absolute;
+            }
+            .overlay-1 {
+                padding-top: 99%;
+            }
+            .overlay-2 {
+                padding-top: 40%;
+            }
+            .overlay-3 {
+                padding-top: 55%;
+            }
+            .useGoodHandleText1 {
+                font-size: 23px !important;
+            }
+            .madeInIndiaText3 {
+                font-size: 16px !important;
+                margin-top: 5px;
+                max-width: 70%;
+            }
+            .footerLinkDiv {
+                font-size: 7px !important;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .menubar {
+                display: none;
+            }
+            #navbarSideButton {
+                margin-top: -9% !important;
+                margin-left: 100% !important;
+                position: absolute;
+            }
+            .padlockdiv {
+                margin-top: 38% !important;
+            }
+        }
+
+        @media screen and (max-width: 746px) {
+            .search-mobile {
+                display: block !important;
+                margin-top: -35px !important;
+                right: 10px !important;
+            }
+        }
+
+        @media screen and (max-width: 670px) {
+            .text-label {
+                font-size: 20px;
+            }
+            .padlockdiv {
+                margin-top: 85% !important;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            /* .social-btn{
+    max-width: 97% !important;
+  }*/
+            .footerLinkDiv {
+                font-size: 11px !important;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #navbarSideButton1 {
+                float: right;
+            }
+            /*.rowCustomProduct{
+    display: table-row;
+  }*/
+            .fb-social-btn {
+                position: relative;
+                margin-top: -40px;
+            }
+            /*  .social-btn{
+    max-width: 60% !important;
+  }*/
+            .search-btn {
+                right: 40px !important;
+                width: 40px !important;
+            }
+            .close-btn {
+                width: 40px !important;
+            }
+            .search-mobile {
+                display: block !important;
+                margin-top: -35px !important;
+                right: 10px !important;
+            }
+            .search-web {
+                display: none;
+            }
+            .padlockdiv {
+                margin-top: 45% !important;
+            }
+            .rowCompanyAbout {
+                margin: 0px !important;
+            }
+            /*  .rowProd
+{
+display: none;
+}*/
+            .rowCustomProd {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+                /* border-spacing: 10px;*/
+                margin: auto;
+                margin-top: -1px;
+            }
+            .columnCustomProd {
+                display: table-cell;
+                background-color: #cdd4d7;
+            }
+            .social-row {
+                margin-top: 10px !important;
+            }
+            .social-instagram {
+                margin-top: 10px !important;
+            }
+            .social-youtube {
+                margin-top: 10px !important;
+            }
+            .footerLinkDiv {
+                padding: 0px;
+                margin-left: -24px;
+            }
+            .rowCustom {
+                display: block;
+                width: 100%;
+                table-layout: unset;
+                border-spacing: 10px;
+                margin: auto;
+            }
+            .columnCustom {
+                display: block;
+                /*  background-color: #cdd4d7;*/
+                margin: 10px 0px 10px 0px;
+            }
+            .ulCompany {
+                padding-left: 0px;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            .aboutIcon {
+                text-align: left !important;
+            }
+            .brandsDiv {
+                padding-right: 15px;
+            }
+            .carousel .carousel-item .carousel-inner {
+                height: 550px !important;
+                object-fit: cover !important;
+            }
+            .carousel .carousel-item {
+                height: 550px !important;
+                object-fit: cover !important;
+            }
+            .carousel-inner img {
+                height: 550px;
+                object-fit: cover;
+            }
+            /*.about-text{max-width:75% !important;}*/
+            .carousel-text {
+                top: 40% !important;
+            }
+            .carousel-text h1 {
+                font-size: 25px !important;
+            }
+            .about {
+                left: 46% !important;
+                top: 75% !important;
+            }
+            .banner h2 {
+                font-size: 30px !important;
+            }
+            #countdown {
+                font-size: 10px !important;
+            }
+            .navbar-side {
+                width: 60%;
+            }
+            .menubarrow {
+                padding-top: 0 !important;
+            }
+            .navbar-side {
+                width: 75% !important;
+            }
+            .item_box {
+                height: 150px !important;
+            }
+            .carousel {
+                margin-top: 10%;
+            }
+            .nav-bg {
+                min-height: 90px !important;
+            }
+            .header-logo {
+                float: left;
+                width: unset;
+                margin-left: 20px;
+            }
+            .footermargin {
+                margin-left: 0px !important;
+            }
+            .madeInIndiaSpan {
+                padding: 20px;
+                position: relative;
+                margin-left: unset;
+                background-color: #090907;
+                margin-bottom: -30px;
+            }
+            .madeInIndiaText2 {
+                font-size: 35px;
+            }
+            .madeInIndiaText2 {
+                font-size: 45px;
+            }
+            .madeInIndiaText3 {
+                font-size: 20px;
+                margin-top: 40px;
+                max-width: 100%;
+                letter-spacing: unset;
+            }
+            .homepageImage {
+                object-fit: contain;
+            }
+            .madeInIndiaImageMob {
+                display: block;
+            }
+            .madeInIndiaImage {
+                display: none;
+            }
+            .footericon {
+                margin-top: 20px;
+            }
+            .formHeadings {
+                font-size: 14px !important;
+            }
+            .maincategoryheading {
+                font-size: 28px !important;
+            }
+            .featuredProductText {
+                font-size: 17px;
+            }
+            .featuredProductBtn {
+                font-size: 12px;
+                max-width: 110px;
+            }
+            .featuredProductBtn1 {
+                margin-top: 17px !important;
+                max-width: 110px;
+            }
+            .featuredProductBtn2 {
+                margin-top: 35px !important;
+            }
+            .featuredProductBtn3 {
+                margin-top: 95px !important;
+            }
+            .mainJobsContainer {
+                display: none;
+            }
+            .mobJobsContainer {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 580px) {
+            /*  #navbarSideButton{margin-top: -16% !important; margin-left:90%  !important; }*/
+            #navbarSideButton {
+                margin-top: -9% !important;
+                margin-left: 100% !important;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+            #navbarSideButton {
+                margin-top: -13% !important;
+                margin-left: 90% !important;
+            }
+            .search-mobile {
+                margin-top: -83px !important;
+                right: 50px !important;
+            }
+        }
+
+        @media screen and (max-width: 515px) {
+            #navbarSideButton {
+                margin-top: -13% !important;
+            }
+            .search-mobile {
+                margin-top: -83px !important;
+                right: 50px !important;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .padlockdiv {
+                margin-top: 50% !important;
+            }
+        }
+
+        @media screen and (max-width: 475px) {
+            #navbarSideButton {
+                margin-top: -15% !important;
+            }
+            .search-mobile {
+                margin-top: -86px !important;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .search-mobile {
+                margin-top: -85px !important;
+            }
+            .padlockdiv {
+                margin-top: 57% !important;
+            }
+            #navbarSideButton {
+                margin-top: -20% !important;
+                margin-left: 90% !important;
+            }
+            .parallax {
+                height: 25vh !important;
+            }
+        }
+
+        @media screen and (max-width: 405px) {
+            /* .search-mobile {
+    margin-top: -75px !important;
+  }*/
+            #navbarSideButton {
+                margin-top: -20% !important;
+                margin-left: 88% !important;
+            }
+            #navbarSideButton.scrolled {
+                margin-top: -20% !important;
+            }
+            .useGoodHandleText2 {
+                font-size: 15px;
+                font-weight: 600;
+            }
+            .useGoodHandleText1 {
+                font-weight: 600;
+                font-size: 20px !important;
+                line-height: 1;
+            }
+            .overlay-1 {
+                padding-top: 60%;
+            }
+            .overlay-2 {
+                padding-top: 30%;
+            }
+            .overlay-3 {
+                padding-top: 45%;
+            }
+            .featuredProductBtn1 {
+                margin-top: 25px;
+            }
+            .featuredProductBtn2 {
+                margin-top: 105px;
+            }
+            .featuredProductBtn3 {
+                margin-top: 125px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .featuredProductBtn2 {
+                margin-top: 70px;
+            }
+            .scrollerImageText {
+                font-size: 14px !important;
+            }
+            .navbar-side {
+                width: 90% !important;
+            }
+            .header-logo,
+            .header-logo.scrolled {
+                height: 46px !important;
+            }
+        }
+
+        .help-inline {
+            color: red !important;
+        }
+
+        /* search start  */
+
+        .search-inline {
+            top: 100%;
+            height: 50px;
+            width: 100%;
+            left: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            /*  top: 0;
+        height: 10%;*/
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            background-color: #dbdbdb;
+            z-index: 9;
+            transition: all .5s ease-in-out;
+        }
+
+        .search-inline.search-visible {
+            opacity: 1;
+            visibility: visible;
+            animation: fadeInDown 0.4s ease-in-out;
+        }
+
+        .search-inline button[type="submit"] {
+            position: absolute;
+            right: 52px;
+            top: 0;
+            background-color: transparent;
+            border: 0px;
+            top: 0;
+            right: 80px;
+            padding: 0px;
+            cursor: pointer;
+            width: 80px;
+            height: 99%;
+            background: #dbdbdb;
+            color: #000;
+        }
+
+        .search-inline .form-control {
+            border: 0px;
+            padding-left: 0;
+            font-size: 1rem;
+            position: absolute;
+            left: 1%;
+            top: 0;
+            height: 100%;
+            width: 99%;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            outline: none;
+        }
+
+        .search-inline .search-close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #616161;
+            width: 80px;
+            height: 100%;
+            text-align: center;
+            display: table;
+            background: #dbdbdb;
+            text-decoration: none;
+        }
+
+        .search-inline .search-close i {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .form-control1 {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #dbdbdb;
+            background-clip: padding-box;
+            border: 1px solid #efefef;
+            border-radius: .25rem;
+            transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+        }
+
+        .search-inline input:focus {
+            outline: none;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translate3d(0, -20%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .search-mobile {
+            color: #000;
+            position: absolute;
+            margin-top: -88px;
+            right: 45px;
+            font-size: 35px;
+            display: none;
+        }
+
+        .search-web {
+            display: block;
+        }
+
+        .social-btn {
+            width: 60px;
+            /*border: 1px solid #acacac;*/
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            /*  background-color: #f0f0f0;*/
+            margin-bottom: 2px;
+            margin-left: 0px;
+            font-size: 14px;
+            color: #666666;
+            margin-top: 7px;
+        }
+
+        .social-icon {
+            height: 40px;
+            margin-right: 5px;
+        }
+
+        .noselect {
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
+          supported by Chrome and Opera */
+        }
+
+        .page-header {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: inherit;
+            /* color:#00A0C6; */
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .nav-bg.scrolled {
+            background-color: rgba(0, 0, 0, 1);
+            /*box-shadow: 1px 2px 4px #9e9e9e !important; */
+            transition: background-color 200ms linear;
+            color: #fff;
+            height: 70px !important;
+            min-height: 70px;
+        }
+
+        .nav-bg {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 1);
+            box-shadow: 1px 2px 4px #9e9e9e;
+            min-height: 100px;
+        }
+
+        .search-icon-mob.scrolled {
+            color: #fff;
+        }
+
+        .header-logo.scrolled {
+            content: url("https://www.bonus.in/assets/images/bonus_logo_orange.png");
+            height: 60px;
+            /* margin-top: -9px;
+        margin-left: 10px;*/
+        }
+
+        .menubartop.scrolled {
+            display: none;
+        }
+
+        .menubarrow.scrolled {
+            padding-top: 10.5px;
+        }
+
+        .search-icon-mob {
+            color: #fff;
+        }
+
+        /*navbar-fixed-top.scrolled {
+background-color: #fff !important;
+transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top {
+background-color: #fff !important;
+}*/
+
+        .item_box {
+            height: 190px;
+        }
+
+        .photo-thumb {
+            width: 100%;
+            height: auto;
+            float: left;
+            border: thin solid #d1d1d1;
+            margin: 0 1em .5em 0;
+            float: left;
+        }
+
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown>.dropdown-toggle:active {
+            /*Without this, clicking will make it sticky*/
+            pointer-events: none;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .dropdown-menu {
+            margin-top: -2px;
+            /*display: block;*/
+            padding: 0;
+            /* border-color: #002f41;*/
+            background-color: #333;
+            padding: 5px;
+        }
+
+        .dropdown-menu li {
+            /* padding-left: 10px;  color: #002f41; */
+            /*border-bottom: 1px solid #dbdbdb;*/
+            /*  border-width: 1px 1px 1px 0px;*/
+            /*  color: #fff;*/
+            color: #ccc;
+            position: relative;
+            padding-left: 10px;
+            display: block;
+            line-height: 28px;
+            font-size: 14px;
+        }
+
+        .dropdown-menu.multi-column {
+            width: 500px;
+        }
+
+        .dropdown-menu.multi-column .dropdown-menu {
+            display: block !important;
+            position: static !important;
+            margin: 0 !important;
+            border: none !important;
+            box-shadow: none !important;
+            min-width: 100px;
+        }
+
+        /*.sub-menu:hover:after{
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  margin-left: -15px;
+  width: 0px;
+  height: 0px;
+  margin: 0px auto;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #333;
+  z-index: 9000;
+}*/
+
+        /*.sub-menu:hover:before .dropdown-toggle a{
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  margin-left: -15px;
+  width: 0px;
+  height : 0px;
+  margin: 0px auto;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #333;
+  z-index: 9000;
+}*/
+
+        .sub-menu a:hover:after {
+            content: "";
+            position: absolute;
+            top: 41px;
+            left: 50%;
+            margin-left: -15px;
+            width: 0px;
+            height: 0px;
+            margin: 0px auto;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid #fff;
+        }
+
+        .sub-menu a:hover:before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            margin-left: -15px;
+            width: 0px;
+            height: 0px;
+            margin: 0px auto;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid #333;
+            z-index: 9000;
+        }
+
+        .submenu-div:hover:after {
+            content: "";
+            position: absolute;
+            top: -14px;
+            left: 45px;
+            margin-left: -15px;
+            width: 0px;
+            height: 0px;
+            margin: 0px auto;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid #333;
+            z-index: 9000;
+        }
+
+        .dropdown .dropdown-menu {
+            /*  display: block !important;*/
+            padding: 12px;
+            margin-top: 28px;
+        }
+
+        .dropdown a:hover,
+        .header-txt-sm a:hover {
+            color: #f2663f;
+        }
+
+        .modal {
+            z-index: 999999 !important;
+        }
+
+        /*nav ul li{
+  list-style:none;
+  float:left;
+  padding-right:20px;
+}
+nav ul li a{
+  text-decoration:none;
+  color:#222;
+  background-color:#ccc;
+  padding:4px 5px;
+}*/
+
+        .vertical-alignment-helper {
+            display: table;
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+        }
+
+        .vertical-align-center {
+            /* To center vertically */
+            display: table-cell;
+            vertical-align: middle;
+            pointer-events: none;
+        }
+
+        .modal-content {
+            /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+            width: inherit;
+            max-width: inherit;
+            /* For Bootstrap 4 - to avoid the modal window stretching full width */
+            height: inherit;
+            /* To center horizontally */
+            margin: 0 auto;
+            pointer-events: all;
+        }
+
+        .modal-input {
+            width: 100%;
+            border: 2px solid #6d6e71;
+            padding: 3px;
+            margin-bottom: 10px;
+            border-radius: 0;
+        }
+
+        .showSweetAlert {
+            z-index: 9999999 !important;
+            border: 1px solid #28a745 !important;
+        }
+
+        .navbar-toggler-right1 {
+            font-size: 30px;
+            /*margin-top: -15px;
+    margin-left: 10px;*/
+            border: 0;
+            background-color: rgb(0 0 0 / 0%);
+            text-decoration: none;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-color:#fff;">
+   
+    
+<style>
+        
+
+        .card {
+          
+            transition: 0.3s;
+            overflow: hidden;
+            border-radius: 0;
+            border: 1px solid #f2663f;
+        }
+
+        .productname {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .products {
+            font-size: 20px !important;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: contain;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        .half-circle {
+            width: 80px;
+            height: 40px;
+            background-color: #ce1126;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-top: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /** { box-sizing: border-box; }
+
+body { font-family: sans-serif; }*/
+
+        select,
+        label,
+        input {
+            font-size: 16px;
+        }
+
+        .product {
+            margin-bottom: 30px;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            /*Desired width*/
+            height: 20px;
+            /*Desired height*/
+        }
+
+      
+
+        input[type=text]:focus {
+            width: 100%;
+        }
+
+        /*.productmainclass{
+
+	margin :160 !important;
+}*/
+
+        .pimage:hover {
+            -moz-transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .card {
+            border: 1px solid #f2663f !important;
+        }
+
+        .procard {
+            overflow: hidden;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+
+        @media only screen and (max-width: 330px) {
+            .card {
+                height: 300px !important;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .sidebarfilters {
+                padding-left: 30px;
+            }
+            .procard {
+                padding: 15px;
+            }
+            .prodcard {
+                height: 350px;
+            }
+            .pimage {
+                height: 100%;
+                width: 100%;
+            }
+            .foot {
+                width: 120% !important;
+            }
+            .hideonmobile {
+                display: none !important;
+            }
+            .showonmob {
+                display: block !important;
+            }
+            .filtercard {
+                padding-left: 81%;
+                padding-top: 160px;
+            }
+            .navleft_sidebar {
+                height: 100%;
+                width: 80%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                padding: 0;
+                list-style: none;
+                border-left: 1px solid #707072; // background-color: rgba(0, 0, 0, .9);
+                overflow-y: scroll;
+                z-index: 4000;
+            }
+            .product {
+                margin-bottom: 0px;
+            }
+            .btncust {
+                font-size: 14px !important;
+            }
+            .productmainclass {
+                padding-top: 100px !important;
+                margin: 0 !important;
+            }
+            #myBtnContainerCategory {
+                margin-top: 140px;
+            }
+            .maincategoryheading {
+                font-size: 25px !important;
+            }
+            .brandLogo {
+                margin-top: -75px !important;
+                right: 22px !important;
+                display: none;
+            }
+        }
+
+        .Category-padding {
+            padding-left: 2.3%;
+            margin-top: -2px !important;
+        }
+
+        @media only screen and (min-width: 700px) {
+            .prodcard {
+                height: 270px !important;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+
+        @media only screen and (min-width: 600px) {
+            .sidebarfilters {
+                padding-left: 30px;
+            }
+            /*.procard{
+		padding:30px;
+	}*/
+            .prodcard {
+                height: 350px;
+            }
+            .pimage {
+                height: 100%;
+                width: 100%;
+            }
+            .showonmob {
+                display: block !important;
+            }
+            .navleft_sidebar {
+                height: 100%;
+                width: 80%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                padding: 0;
+                list-style: none;
+                border-left: 1px solid #707072; // background-color: rgba(0, 0, 0, .9);
+                overflow-y: scroll;
+                z-index: 4000;
+            }
+            .productmainclass {
+                /* padding-top:140px !important;*/
+                margin: 0 !important;
+            }
+            .maincategoryheading {
+                font-size: 30px !important;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+
+        @media only screen and (min-width: 768px) {
+            .productmainclass {
+                margin-top: 160px !important;
+            }
+            .pimage {
+                height: auto;
+                width: 100%;
+            }
+            .maincategoryheading {
+                font-size: 30px !important;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+
+        @media only screen and (min-width: 992px) {
+            .hideondesktop {
+                display: none !important;
+            }
+            .productmainclass {
+                margin-top: 160px !important;
+            }
+            .pimage {
+                height: auto;
+                width: 100%;
+            }
+            .maincategoryheading {
+                font-size: 30px !important;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+
+        @media only screen and (min-width: 1200px) {
+            .hideondesktop {
+                display: none !important;
+            }
+            .productmainclass {
+                margin-top: 130px !important;
+            }
+            .pimage {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .filterDiv {
+            float: left;
+            background-color: #2196F3;
+            color: #ffffff;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            margin: 2px;
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .container {
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        /* Style the buttons */
+
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            text-decoration: none;
+            border: 2px solid #929497;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        /*.btn.active {
+  background-color: #666;
+  color: white;
+}*/
+
+        .productsrow .box {
+            float: left;
+            width: 150px;
+            margin: 20px;
+        }
+
+        .productsrow .box .top {
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .productsrow .box .bottom {
+            padding: 12px;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        .bottom {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .Category-padding {
+                padding-left: 8.5% !important;
+            }
+            
+        }
+    </style>
+
+
+    <div class="row" style="background-color:#ffffff;">
+
+        
+
+        <style type="text/css">
+            .btncust {
+               
+                background: transparent;
+                font-size: 18px;
+                font-weight: 500;
+                outline: 0 !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                padding-bottom: 0px !important;
+                padding-top: 0px !important;
+                margin-top: 10px;
+            }
+
+            button:active {
+                outline: none;
+                border: none;
+            }
+
+            button:focus {
+                outline: 0;
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25) !important;
+            }
+
+            .active,
+            .btn:hover {
+                /* background-color: #666;*/
+                background: transparent;
+                /*  color: #000000;
+  font-weight: 600;*/
+                outline: 0 !important;
+                font-family: 'DIN Bold' !important;
+                border: 2px solid #929497;
+                font-weight: 600;
+                color: #f2663f;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #000000;
+            }
+
+            .card:hover .overlay {
+                opacity: .5;
+            }
+
+            .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                background-color: #000;
+            }
+        </style>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  productmainclass" style="background-color:#ffffff;margin-bottom:0px;">
+            <div class="Category-padding">
+                <h2 class="maincategoryheading" style="font-weight: 600;color: #f2663f;    font-size: 30px;font-family: 'DIN Bold' !important;margin-bottom: 0;"><a href="https://www.bonus.in/product/getProd/1">MORTICE HANDLES</a></h2>
+                <img class="brandLogo" src="https://www.bonus.in/assets/images/bonus_logo_orange.png" style="width: 80px;height: 70px; object-fit: contain; position: absolute;     right: 40px; margin-top: -60px;" /> </div>
+            <div class="Category-padding" style="      margin-bottom: 10px;  margin-top: -10px;">
+                <button class="btn btn1 btncust active" id="subCatBtn0" onclick="filterSelection('0','1')">All</button>
+                <button class="btn btn1 btncust" id="subCatBtn1" data-desc="The G5 series is our flagship array of door handles. With patented, state of the art, and ergonomically designed high quality hardware, made to provide ease of use and the highest levels of security."
+                    onclick="filterSelection('1','1')">G5 Series</button>
+                <button class="btn btn1 btncust" id="subCatBtn2" data-desc="A collection of door handles made to beat the highest industry standard. Crafted with the most premium materials such as extruded and forged brass meant to give the products a longer life and make your doors look beautiful. Finished by hand with elegant craftsmanship to ensure that every product of the Premier Series is perfect for all your contemporary desires."
+                    onclick="filterSelection('2','1')">Premier Series</button>
+                <button class="btn btn1 btncust" id="subCatBtn3" data-desc="With an aim to provide a selection of locks which combine minimalistic designs with maximum functionality, Bonus brings you a range of compact handles made with exquisite craftmanship to provide a series with appealing geometry, sleek finish, and functional form."
+                    onclick="filterSelection('3','1')">Compact Series</button>
+                <button class="btn btn1 btncust" id="subCatBtn4" data-desc="The SST series is designed to give unmatched value for money in today’s economic market. Simple but elegant designs, low maintenance and reliable performance are the main advantages of this series."
+                    onclick="filterSelection('4','1')">SST Series</button>
+                <!--
+  <button class="btn btn1 btncust" onclick="filterSelection('cars')"> Premier Series</button>
+  <button class="btn btn1 btncust" onclick="filterSelection('animals')"> Compact Series</button>
+  <button class="btn btn1 btncust" onclick="filterSelection('fruits')"> SST Series</button> -->
+            </div>
+            <!--<br>
+<div id="myBtnContainerBrand" style="    text-align: center;">
+  <button class="btn btn2 btncust active" onclick="filterSelection('all')"> All Brands</button>
+  <button class="btn btn2 btncust" onclick="filterSelection('cars')"> Bonus</button>
+  <button class="btn btn2 btncust" onclick="filterSelection('animals')"> Mobaj</button>
+</div> -->
+
+            <!-- <div class="form-group">
+  <label for="sel1">Filter By Category:</label>
+  <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="sel1">Filter By Brand:</label>
+  <select class="form-control" id="sel1">
+    <option>All Brands</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div> -->
+            <!-- Button trigger modal -->
+            <!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button> -->
+            <p style="margin: 0px 15px 15px 30px;display: none;" id="productDescription"></p>
+
+
+            <div class="row dataRow" style="margin: 0px 15px 15px 15px;">
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/1">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">G5 Comfy <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Comfy_wood_Knob2019_07_25_114100.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/2">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">G5 Marvel <!--  - Code : 1.00 --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Side_Action_copy2019_07_25_144250.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/3">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">G5 Pearl <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Pearl_copy2019_07_25_144908.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/4">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">G5 Push Pull <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Push_Pull_with_Cylinder2019_07_25_145414.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/5">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">G 5 WONDER BOLT <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564057437_a.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/6">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">SST 44 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/SST_44_Handle2019_07_29_162148.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/7">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">SST 22 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/SST_22_Handle2019_07_29_162328.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/8">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">SST New 66 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/SST_New2019_07_29_162513.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/9">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 999 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_M_999_Handle_copy2019_07_29_165608.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/10">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 999 Rose <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_M_999_Rose_copy2019_07_29_165846.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/11">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 555 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_555_Handle_copy2019_07_29_170036.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/12">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 555 Rose <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_555_Rose_copy2019_07_29_170806.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/13">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 777 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_777_Handle_copy2019_07_29_170941.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/14">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 777 Rose <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_777_Rose_copy2019_07_29_171357.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/15">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 333 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_333_Handle_copy2019_07_30_004634.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/16">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 333 Rose <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_333_Rose_copy2019_07_30_004849.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/17">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 111 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_111_Handle_copy2019_07_30_005030.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/18">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 111 Rose <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_111_Rose_copy2019_07_30_005159.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/19">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 888 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Compact_New__8882019_07_30_005326.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/20">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Compact 303 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/IMG_4017_00001___Copy_copy2019_07_30_005430.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/21">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Square Handle <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564428898_premier_square_handle_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/22">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Square Rose Handle <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Premier_Square_Rose_copy2019_07_30_010615.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/23">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Round Handle <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Premier_Round_Handle_copy2019_07_30_010828.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/24">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Round Rose Handle <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564511826_premier_round_rose_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/25">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Emerald <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Premier_Emerald_copy2019_07_30_011119.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/26">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Emerald 8 inch <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Premier_Emerald_2_8_inch_copy2019_07_30_011302.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/27">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Emerald Rose <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Premier_Emerald_Rose_copy2019_07_30_011417.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/28">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Half Moon <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564429686_half_moon_handle_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/29">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Olive 1 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564429768_premier_olive_1_handle_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/30">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Olive 1  8 inch <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564430191_premier_olive_1___8_handle_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/31">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Olive 1 Rose <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564430215_premier_olive_1_rose_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/32">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Olive 2 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564430327_premier_olive_2_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/33">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Olive 2   8 inch <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564430716_premier_olive_2___8_inch_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/34">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;"> Olive 2 Rose <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/Premier_Emerald_Rose_copy2019_07_30_011417.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/35">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Olive 3 <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564430916_premier_olive_3_handle_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/36">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Olive 3 Rose <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564430950_premier_olive_3_rose_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/37">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;">Topaz  10 inch <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564430993_topaz_10_inch_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4  procard product box">
+                    <a href="https://www.bonus.in/product/details/38">
+                        <div class="card prodcard">
+                            <div style="background-color: #f2663f;padding: 2px 10px 2px 10px;">
+                                <span class="productame" style="background-color: #f2663f;text-align:left;color: #fff;"> Topaz 8 inch <!--  --> </span>
+                            </div>
+                            <div class="card red prodcard card-img-top" style=" padding: 10px;">
+                                <img src="https://www.bonus.in/uploads/productfiles/1564431021_topaz_8_inch_copy.jpg" alt="product" class="card-img-top img-responsive pimage" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="padding: 0px;">
+						<span class="top " style="text-align: right; right: 20px; position: absolute; margin-top: -45px;cursor: pointer;color: #ffffff; background-color: #fff;  padding: 5px;  border-radius: 20px;  font-size: 13px;" title="View Details"> <img src="https://www.bonus.in/assets/images/details.png"> </span>
+				</div> -->
+                        <div class="bottom" style=" padding: 15px;   text-align: justify; background-color: rgb(249, 249, 249);  border-style: solid; border-color: rgb(219, 219, 219);border-width: 0px 1px 1px 1px;">
+
+                            <div>
+                                <div style="margin-top: 20px; margin-bottom: 20px;">
+                                    <div style="line-height: 1;font-family: DIN Bold;">BRH-01-004</div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Door Thickness :</span> <span style="font-family: DIN Bold;">35-68 mm</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Finish :</span> <span style="font-family: DIN Bold;">BSN, CP</span></div>
+                                    <div style="line-height: 1;"><span style="font-family: DIN Regular;color: #919192;">Make :</span> <span style="font-family: DIN Bold;">Virgin Brass</span></div>
+                                </div>
+                                <div class="row" style="padding: 0; margin:5px 0px 0px 0px;">
+                                    <span class="enqBtn" style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">PRODUCT ENQUIRY</span>                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="text-align: center; border-right: 1px solid white;    background-color: #18aa7e;color: #fff;    padding: 3px 10px 3px 10px;font-weight: 600;    font-size: 15px;cursor: pointer;">DOWNLOAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+  
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+<script type="text/javascript">
+    $('.enqBtn').click(function() {
+        $('#enqModal').modal('show');
+    });
+</script>
+
+<script type="text/javascript">
+    $.urlParam = function(name) {
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results == null) {
+            return null;
+        }
+        return decodeURI(results[1]) || 0;
+    }
+
+    var scrollid = $.urlParam('section');
+    //  console.log(scrollid);
+
+    if (scrollid != '' && scrollid != null) {
+        $('html,body').animate({
+            scrollTop: $('#' + scrollid).offset().top - 150
+        }, 200);
+        //  $("a.contact").removeClass("nav-active");
+
+        /* $('body').animate({
+            scrollTop: eval($('#'+scrollid).offset().top - 170)
+        }, 1000);*/
+        //  console.log($('#'+scrollid).offset().top-170);
+
+
+    }
+</script>
+
+</html>
+<script>
+    var subCategoryId = '0';
+    $('.top').on('click', function() {
+        $parent_box = $(this).closest('.box');
+        $parent_box.siblings().find('.bottom').slideUp();
+        $parent_box.find('.bottom').slideToggle(1000, 'swing');
+
+    });
+
+    $('.btncust').click(function() {
+        $('.btncust').removeClass("active");
+        $(this).addClass("active");
+    });
+
+
+
+    function filterSelection(id, mainCatId) {
+        if (id != '0') {
+            $('.productSubmenu').removeClass("prodMenuActive");
+            $('#subCat' + id).addClass("prodMenuActive");
+            $('#productDescription').show();
+            $('#productDescription').html($('#subCatBtn' + id).attr('data-desc'));
+        } else {
+            $('#productDescription').hide();
+        }
+        var actionUrl = 'https://www.bonus.in/product/filterproducts';
+        $.ajax({
+            url: actionUrl,
+            type: 'POST',
+            data: {
+                subcategory: id,
+                maincategory: mainCatId
+            },
+            async: false,
+            success: function(data) {
+                if (data.status == '1') {
+                    //console.log(data.productdata);
+                    //$('.productsrow').empty();
+                    $('.dataRow').html('');
+                    $('.dataRow').html(data.productdata);
+                    $('.top').on('click', function() {
+                        $parent_box = $(this).closest('.box');
+                        $parent_box.siblings().find('.bottom').slideUp();
+                        $parent_box.find('.bottom').slideToggle(1000, 'swing');
+                    });
+                    $('.enqBtn').click(function() {
+                        $('#enqModal').modal('show');
+                    });
+
+                } else {
+                    $(".dataRow").html(data.productdata);
+                }
+                if (id == 0) {
+                    $('#productDescription').hide();
+                } else {
+                    $('#productDescription').show();
+                }
+            },
+            dataType: 'JSON'
+        });
+
+    }
+    // Add active class to the current button (highlight it)
+    /*var btnContainer = document.getElementById("myBtnContainerCategory");
+    var btns = btnContainer.getElementsByClassName("btn1");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }*/
+
+    /*var btnContainer2 = document.getElementById("myBtnContainerBrand");
+    var btns2 = btnContainer2.getElementsByClassName("btn2");
+    for (var j = 0; j < btns2.length; j++) {
+      btns2[j].addEventListener("click", function(){
+        var current2 = document.getElementsByClassName("active");
+        current2[0].className = current2[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }*/
+
+
+    $(document).ready(function() {
+
+        // alert("hey");
+
+        //$('#navleft_sidebar').attr("style", "display: none !important");
+        // $( "#navleft_sidebar" ).toggle();
+        $("#navleft_sidebar").toggle();
+        $("#showfilters").click(function() {
+            $("#navleft_sidebar").toggle();
+        });
+
+
+
+
+
+
+        /*  $(document).click(function(event) {
+
+
+
+        		if($(event.target).is('#showfilters')) {
+        		    $( "#navleft_sidebar" ).show();
+        		}
+        		// else if ($(event.target).is('#navleft_sidebar')) {
+        		   // $( "#navleft_sidebar" ).show();
+        		// }
+        		else {
+        			alert(event.target.id + ' was clicked.');
+        		   //$( "#navleft_sidebar" ).hide();
+        		}
+        	}); */
+
+
+
+
+
+
+        var productsarray = [];
+        $(".products").click(function() {
+
+            if ($(this).prop('checked') == true) {
+                var products = $(this).val();
+                productsarray.push(products);
+                console.log(products);
+                var actionUrl = 'https://www.bonus.in/product/searchproducts';
+                $.ajax({
+                    url: actionUrl,
+                    type: 'POST',
+                    data: {
+                        productsarray: productsarray
+                    },
+                    async: false,
+                    success: function(data) {
+                        if (data.status == '1') {
+                            console.log(productsarray);
+                            $('.product').remove();
+                            $('.productmainclass').html('');
+                            $('.productmainclass').html(data.productdata);
+                        } else {
+                            $(".productmainclass").html(data.productdata);
+                        }
+                    },
+                    dataType: 'JSON'
+                });
+            } else {
+
+                // var y = [1, 2, 2, 3, 2]
+                // var removeItem = 2;
+                var products = $(this).val();
+                productsarray = jQuery.grep(productsarray, function(value) {
+                    return value != products;
+                });
+
+
+                var actionUrl = 'https://www.bonus.in/product/searchproducts';
+                $.ajax({
+                    url: actionUrl,
+                    type: 'POST',
+                    data: {
+                        productsarray: productsarray
+                    },
+                    async: false,
+                    success: function(data) {
+                        if (data.status == '1') {
+                            console.log(productsarray);
+                            $('.product').remove();
+                            $('.productmainclass').html('');
+                            $('.productmainclass').html(data.productdata);
+                        } else {
+                            $(".productmainclass").html(data.productdata);
+                        }
+                    },
+                    dataType: 'JSON'
+                });
+
+
+
+
+            }
+
+        });
+
+
+
+
+
+        $(".search").keyup(function() {
+            var keyword = $(".search").val();
+            console.log(keyword);
+
+            var actionUrl = 'https://www.bonus.in/product/searchboxproducts';
+            $.ajax({
+                url: actionUrl,
+                type: 'POST',
+                data: {
+                    keyword: keyword
+                },
+                async: false,
+                success: function(data) {
+                    if (data.status == '1') {
+                        console.log(productsarray);
+                        $('.product').remove();
+                        $('.productmainclass').html('');
+                        $('.productmainclass').html(data.productdata);
+                    } else {
+                        $(".productmainclass").html(data.productdata);
+                    }
+                },
+                dataType: 'JSON'
+            });
+
+
+
+        });
+
+
+
+        var prodLink = '';
+
+        if (prodLink != '') {
+            console.log(prodLink);
+            var productsarrayLink = [];
+            switch (prodLink) {
+                case 'DOORHANDLES':
+                    productsarrayLink.push('1 , 0');
+                    break;
+                case 'PULLS':
+                    productsarrayLink.push('2 , 0');
+                    break;
+                case 'FINISHES':
+                    productsarrayLink.push('3 , 0');
+                    break;
+                case 'USAGE':
+                    productsarrayLink.push('4 , 0');
+                    break;
+            }
+            var actionUrl = 'https://www.bonus.in/product/searchproducts';
+            $.ajax({
+                url: actionUrl,
+                type: 'POST',
+                data: {
+                    productsarray: productsarrayLink
+                },
+                async: false,
+                success: function(data) {
+                    if (data.status == '1') {
+                        //console.log(productsarrayLink);
+                        $('.product').remove();
+                        $('.productmainclass').html('');
+                        $('.productmainclass').html(data.productdata);
+                    } else {
+                        $(".productmainclass").html(data.productdata);
+                    }
+                },
+                dataType: 'JSON'
+            });
+        }
+
+    });
+
+
+    $('.btncust').removeClass("active");
+    $('#subCatBtn0').addClass("active");
+    //$('.btncust').removeClass("active");
+    $('.productSubmenu').removeClass("prodMenuActive");
+    if (subCategoryId == '0') {
+        $('#mainCat1').addClass("prodMenuActive");
+
+        $('#productDescription').hide();
+    } else {
+        $('#subCat0').addClass("prodMenuActive");
+        $('#productDescription').show();
+        $('#productDescription').html($('#subCatBtn0').attr('data-desc'));
+    }
+</script>
+<style type="text/css">
+    .productMenu {
+        color: #f2663f !important;
+    }
+
+    .prodMenuActive {
+        color: #f2663f !important;
+        font-weight: 600 !important;
+    }
+</style>
